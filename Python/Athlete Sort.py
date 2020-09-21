@@ -12,10 +12,6 @@ import re
 import sys
 
 
-def func(x):
-    return x[k]
-
-
 if __name__ == '__main__':
     nm = input().split()
 
@@ -30,7 +26,7 @@ if __name__ == '__main__':
 
     k = int(input())
 
-    ans = sorted(arr, key=func)
+    ans = sorted(arr, key=lambda x: x[k])
 
     for i in range(len(ans)):
         p = ' '.join(str(j) for j in ans[i])

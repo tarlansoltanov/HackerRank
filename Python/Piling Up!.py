@@ -36,4 +36,4 @@ for _ in range(int(input())):
 
     arr = deque(list(map(int, input().split())))
 
-    print(check(arr))s
+    print(check(arr))
